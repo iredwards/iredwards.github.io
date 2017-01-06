@@ -1,37 +1,15 @@
-## Welcome to GitHub Pages
+# Links to external resources
 
-You can use the [editor on GitHub](https://github.com/iredwards/iredwards.github.io/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+Cloud Native Computing Foundation Announces Samsung SDS as Platinum Member
+<https://www.cncf.io/announcement/2016/11/08/cloud-native-computing-foundation-announces-samsung-sds-platinum-member>
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+An Ode to Boring: Creating Open and Stable Container World  
+Medium post by Bob Wise  
+<https://medium.com/@bob_48171/an-ode-to-boring-creating-open-and-stable-container-world-4a7a39971443#.4n1zpgtby>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+CNCT Github Pages  
+<https://github.com/samsung-cnct/samsung-cnct.github.io>
 
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/iredwards/iredwards.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+CNCT Youtube channel  
+<https://www.youtube.com/playlist?list=PLPZM8052WDx6B-z-VymVL2qqLMhI1EMIq>
