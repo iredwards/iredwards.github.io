@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="">
+<meta name="keywords" content=" ">
+<title>Command-line wrapper for K2 (k2cli) | SDS Cloud Native Computing Team</title>
+<link rel="stylesheet" href="css/syntax.css">
+
+
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<!--<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">-->
+<link rel="stylesheet" href="css/modern-business.css">
+<link rel="stylesheet" href="css/lavish-bootstrap.css">
+<link rel="stylesheet" href="css/customstyles.css">
+<link rel="stylesheet" href="css/theme-blue.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+<script src="js/jquery.navgoco.min.js"></script>
+
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/anchor-js/2.0.0/anchor.min.js"></script>
+<script src="js/toc.js"></script>
+<script src="js/customscripts.js"></script>
+
+<link rel="shortcut icon" href="images/favicon.ico">
+
+<!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+    <script>
+        $(document).ready(function() {
+            // Initialize navgoco with default options
+            $("#mysidebar").navgoco({
+                caretHtml: '',
+                accordion: true,
+                openClass: 'active', // open
+                save: false, // leave false or nav highlighting doesn't work right
+                cookie: {
+                    name: 'navgoco',
+                    expires: false,
+                    path: '/'
+                },
+                slide: {
+                    duration: 400,
+                    easing: 'swing'
+                }
+            });
+
+            $("#collapseAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', false);
+            });
+
+            $("#expandAll").click(function(e) {
+                e.preventDefault();
+                $("#mysidebar").navgoco('toggle', true);
+            });
+
+        });
+
+    </script>
+    <script>
+        $(function () {
+            $('[data-toggle="tooltip"]').tooltip()
+        })
+    </script>
+    
+
+</head>
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container topnavlinks">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="fa fa-lg navbar-brand" href="index.html">&nbsp;<span class="projectTitle"> Samsung SDS Cloud Native Computing Team</span></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <!-- entries without drop-downs appear here -->
+                
+                <!-- entries with drop-downs appear here -->
+                <!-- conditional logic to control which topnav appears for the audience defined in the configuration file.-->
+                
+                
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">Resources<b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                        
+                        
+                        <li><a href="https://github.com/samsung-cnct" target="_blank">CNCT Github Repo</a></li>
+                        
+                        
+                        
+                        <li><a href="https://kubernetes.io" target="_blank">Kubernetes</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.docker.com/" target="_blank">Docker</a></li>
+                        
+                        
+                        
+                        <li><a href="http://global.samsungsds.com/global/en/index.html" target="_blank">Samsung SDS</a></li>
+                        
+                        
+                        
+                        <li><a href="https://www.cncf.io/" target="_blank">Cloud Native Computing Foundation</a></li>
+                        
+                        
+                    </ul>
+                </li>
+                
+                
+                
+			<li>
+
+
+
+  <a class="email" title="Submit feedback" href="#" onclick="javascript:window.location='mailto:samsung.cloudnative@gmail.com?subject=CNCT Page feedback&body=I have some feedback about the Command-line wrapper for K2 (k2cli) page: ' + window.location.href;"><i class="fa fa-envelope-o"></i> Feedback</a>
+
+<li>
+
+		
+                <!--comment out this block if you want to hide search-->
+            </ul>
+        </div>
+        </div>
+        <!-- /.container -->
+</nav>
+
+  <div class="container">
+    <div class="col-lg-12">&nbsp;</div>
+    <div class="row">
+      <div class="col-md-3">
+          
+<ul id="mysidebar" class="nav">
+  
+  
+  <li>
+    <a href="#">About CNCT</a>
+    <ul>
+      
+      
+      <li><a href="index.html">Samsung SDS CNCT Home</a></li>
+      
+      
+      
+    </ul>
+    
+  <li>
+    <a href="#">CNCT K2 Projects</a>
+    <ul>
+      
+      
+      <li><a href="aboutK2.html">About K2</a></li>
+      
+      
+      
+      
+        <li class="active"><a href="k2cli.html">Command-line wrapper for K2 (k2cli)</a></li>
+      
+      
+      
+      
+      <li><a href="k2-logging.html">Logging and K2</a></li>
+      
+      
+      
+      
+      <li><a href="k2-helm-charts.html">K2 and Helm charts</a></li>
+      
+      
+      
+    </ul>
+    
+  <li>
+    <a href="#">Videos</a>
+    <ul>
+      
+      
+      <li><a href="youtubes.html">CNCT Playlist</a></li>
+      
+      
+      
+    </ul>
+    
+    
+  </li>
+</ul>
+</div>
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+      <div class="col-md-9">
+        <div class="post-header">
+   <h1 class="post-title-main">Command-line wrapper for K2 (k2cli)</h1>
+</div>
+
+
+
+<div class="post-content">
+
+   
+
+    
+
+  <p>k2cli is a command-line interface for K2. It supports Kubernetes deployments to AWS, GKE, and other environments.</p>
+
+<p>Using the k2cli tool you can perform tasks such as:<br />
+- Create a cluster<br />
+- Configure ssh for your cluster<br />
+- List and install Helm charts<br />
+- List nodes in your cluster<br />
+- List installed applications<br />
+- Destroy a running cluster</p>
+
+<p>k2cli command-line options are documented here: <a href="https://github.com/samsung-cnct/k2cli/blob/master/docs/k2cli.md">https://github.com/samsung-cnct/k2cli/blob/master/docs/k2cli.md</a>.</p>
+
+<h2 id="installing-k2cli">Installing k2cli</h2>
+
+<h3 id="requirements">Requirements</h3>
+<p>Docker must be installed on the machine where you run k2cli, and your user must have permissions to run it.</p>
+
+<h3 id="fetching-the-official-build">Fetching the official build</h3>
+<p>The latest official build can be found here: <a href="https://github.com/samsung-cnct/k2cli/releases">https://github.com/samsung-cnct/k2cli/releases</a>. You should use the latest version unless you have a specific reason to use a different version.</p>
+
+<h3 id="building-a-configuration-file">Building a configuration file</h3>
+<p>K2 uses a yaml configuration file for all aspects of the both the Kubernetes cluster and the infrastructure that is
+running it. To build a generic AWS configuration file that has a large number of sensible defaults, you can run:
+<code class="highlighter-rouge">
+./k2cli generate ~/k2configs/
+</code>
+which will create a file at <code class="highlighter-rouge">~/k2configs/config.yaml</code>. There are three fields that need to be set before this file can
+be used:</p>
+
+<ul>
+  <li>
+    <p><strong>Cluster name</strong><br />
+All K2 clusters should have a unique name so their assets can be easily identified by humans in the
+AWS console (no more than 13 characters). The cluster name is set in the <code class="highlighter-rouge">deployment.cluster</code> field.  This dotted notation refers to the hierarchical structure of a yaml file where cluster is a sub field of deployment. This is also the third line in the generated file.</p>
+  </li>
+  <li>
+    <p><strong>AWS access key</strong><br />
+Your AWS access key is required for programmatic access to AWS. The field is named
+<code class="highlighter-rouge">deployment.providerConfig.authentication.accessKey</code>. This can be either set to the literal value, or to an environment
+variable that K2 will use.</p>
+  </li>
+  <li>
+    <p><strong>AWS secret key</strong><br />
+This is your AWS secret key that is paired to the above access key. This field is named
+<code class="highlighter-rouge">deployment.providerConfig.authentication.secretKey</code>. This can be either set to the actual value or a environment
+variable and K2 will perform the replacement.This can be either set to the literal value, or to an environment
+variable that K2 will use.</p>
+  </li>
+</ul>
+
+<p><strong>Note</strong><br />
+The <code class="highlighter-rouge">deployment.providerConfig.authentication.credentialsFile</code> field is present but is not yet fully implemented.
+For more information see: <a href="https://github.com/samsung-cnct/k2/issues/128">https://github.com/samsung-cnct/k2/issues/128</a></p>
+
+<p>When the required fields are set your configuration file is ready to go! The default file will create a production-ready
+cluster with the following configuration:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Role</th>
+      <th>#</th>
+      <th>Type</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary etcd cluster</td>
+      <td>5</td>
+      <td>t2.small</td>
+    </tr>
+    <tr>
+      <td>Events etcd cluster</td>
+      <td>5</td>
+      <td>t2.small</td>
+    </tr>
+    <tr>
+      <td>Master nodes</td>
+      <td>3</td>
+      <td>m3.medium</td>
+    </tr>
+    <tr>
+      <td>Cluster nodes</td>
+      <td>3</td>
+      <td>c4.large</td>
+    </tr>
+    <tr>
+      <td>Special nodes</td>
+      <td>2</td>
+      <td>m3.medium</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>We have chosen this configuration based on our own, and other’s, publicly available research. It creates an underpowered cluster
+in terms of cluster nodes, but that’s an easy setting to change. The important point is to ensure that the control plane is
+production quality.</p>
+
+<h3 id="creating-your-first-cluster">Creating your first cluster</h3>
+<p>To create your first cluster, run the following command. (This assumes you have a configuration built as described above.)
+<code class="highlighter-rouge">
+./k2cli cluster up ~/k2configs/config.yaml
+</code>
+This will take anywhere from five to twenty minutes depending on how AWS is feeling when you execute this command. When
+complete the cluster will exist in its own VPC and will be accesible via the <code class="highlighter-rouge">tool</code> subcommands. The output artifacts
+will be stored in the default location: <code class="highlighter-rouge">~/.kraken/&lt;cluster name&gt;</code>.</p>
+
+<h3 id="working-with-your-cluster-using-k2cli">Working with your cluster (using k2cli)</h3>
+<p>k2cli uses the K2 image (github.com/samsung_cnct/k2) for all of its operations. The K2 image ships with <code class="highlighter-rouge">kubectl</code> and <code class="highlighter-rouge">helm</code>
+installed and through the <code class="highlighter-rouge">k2cli tool</code> subcommand you can access these tools. Using the <code class="highlighter-rouge">k2cli tool</code> subcommand helps ensure you are
+using the correct version of the relevant CLI for your cluster.</p>
+
+<p><code class="highlighter-rouge">kubectl</code> <a href="http://kubernetes.io/docs/user-guide/kubectl-overview/">(http://kubernetes.io/docs/user-guide/kubectl-overview/)</a> is a CLI for working with a Kubernetes cluster. It is
+used for deploying application, checking system status and more. See the linked documentation for more details.</p>
+
+<p><code class="highlighter-rouge">helm</code> <a href="http://kubernetes.io/docs/user-guide/kubectl-overview/">(http://kubernetes.io/docs/user-guide/kubectl-overview/)</a> is a CLI for deploying and packaging applications to deploy
+to Kubernetes. See the linked documentation for more details.</p>
+
+<h4 id="example-usage---k2cli-tool-kubectl">Example usage - k2cli tool kubectl</h4>
+<p>To see all nodes in your Kubernetes cluster
+<code class="highlighter-rouge">
+./k2cli tool kubectl --config ~/k2configs/config.yaml get nodes
+</code></p>
+
+<p>To see all installed application across all namespaces
+<code class="highlighter-rouge">
+./k2cli tool kubectl --config ~/k2configs/config.yaml -- get pods --all-namespaces
+</code></p>
+
+<h4 id="example-usage---k2cli-tool-helm">Example usage - k2cli tool helm</h4>
+<p>To list all installed charts
+<code class="highlighter-rouge">
+./k2cli tool helm --config ~/k2configs/config.yaml list
+</code></p>
+
+<p>To install the Kafka chart maintained by Samsung CNCT.
+<code class="highlighter-rouge">
+./k2cli tool helm --config ~/k2configs/config.yaml install atlas/kafka
+</code></p>
+
+<h3 id="working-with-your-cluster-using-host-installed-tools">Working with your cluster (using host installed tools)</h3>
+<p>The file that is required for both helm and kubectl to connect to, and interact with, your Kubernetes deployment is saved to your
+local machine in the output directory. By default, this directory is <code class="highlighter-rouge">~/.kraken/&lt;cluster name&gt;/</code>. The filename is <code class="highlighter-rouge">admin.kubeconfig</code>.</p>
+
+<h4 id="example-usage---local-kubectl">Example usage - local kubectl</h4>
+<p>To list all nodes in your Kubernetes cluster
+<code class="highlighter-rouge">
+kubectl --kubeconfig=~/.kraken/&lt;cluster name&gt;/admin.kubeconfig --cluster=&lt;cluster name&gt; get nodes
+</code></p>
+
+<p>To list all installed applications across all namespaces
+<code class="highlighter-rouge">
+kubectl --kubeconfig=~/.kraken/&lt;cluster name&gt;/admin.kubeconfig --cluster=&lt;cluster name&gt; get pods --all-namespaces
+</code></p>
+
+<h4 id="example-usage---local-helm">Example usage - local helm</h4>
+<p>Helm requires both the admin.kubeconfig file and the saved local helm state. The helm state directory is also in the output
+directory</p>
+
+<p>To list all installed charts
+<code class="highlighter-rouge">
+KUBECONFIG=~/.kraken/&lt;cluster name&gt;/admin.kubeconfig HELM_HOME=~/.kraken/&lt;cluster name&gt;/.helm helm list
+</code></p>
+
+<p>To install the Kafka chart maintained by Samsung CNCT.
+<code class="highlighter-rouge">
+KUBECONFIG=~/.kraken/&lt;cluster name&gt;/admin.kubeconfig HELM_HOME=~/.kraken/&lt;cluster name&gt;/.helm helm install atlas/kafka
+</code></p>
+
+<h3 id="destroying-the-running-cluster">Destroying the running cluster</h3>
+<p>While not something to be done in production, during development when you are done with your cluster (or with a quickstart) it’s
+best to clean up your resources. To destroy the running cluster from this guide, simply run:
+<code class="highlighter-rouge">
+./k2cli cluster down ~/k2configs/config.yaml
+</code></p>
+
+<p><strong>Note:</strong> if you have specified an ‘–output’ directory during the creation command, make sure you specify it here or the cluster
+will still be running!</p>
+
+<h2 id="note-on-using-environment-variables-in-yaml-configuration">Note on using environment variables in yaml configuration</h2>
+
+<p>k2cli will automatically attempt to expand all <code class="highlighter-rouge">$VARIABLE_NAME</code> strings in your configuration file. It will pass the variable and value to the K2 Docker container, and mount the path (if it’s a path to an existing file or folder) into the K2 Docker container.</p>
+
+<h3 id="environment-variable-expansion">Environment variable expansion</h3>
+
+<p>For example, given a variable such as <code class="highlighter-rouge">export MY_SERVICE_ACCOUNT_KEYFILE=/Users/kraken/.ssh/keyfile.json</code>, the configuration:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deployment:
+  cluster: production-cluster
+  keypair:
+    -
+      name: key
+      publickeyFile:
+      privatekeyFile:
+      providerConfig:
+        username:
+        serviceAccount: "serviceaccount@project.iam.gserviceaccount.com"
+        serviceAccountKeyFile: "$MY_SERVICE_ACCOUNT_KEYFILE"
+
+...
+</code></pre>
+</div>
+
+<p>will be expanded to:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deployment:
+  cluster: production-cluster
+  keypair:
+    -
+      name: key
+      publickeyFile:
+      privatekeyFile:
+      providerConfig:
+        username:
+        serviceAccount: "serviceaccount@project.iam.gserviceaccount.com"
+        serviceAccountKeyFile: "/Users/kraken/.ssh/keyfile.json"
+
+...
+</code></pre>
+</div>
+
+<p>and the K2 Docker container would get a <code class="highlighter-rouge">/Users/kraken/.ssh/keyfile.json:/Users/kraken/.ssh/keyfile.json</code> mount and a <code class="highlighter-rouge">K2_SERVICE_ACCOUNT_KEYFILE=/Users/kraken/.ssh/keyfile.json</code> environment variable</p>
+
+<h3 id="automatic-binding-of-environment-variables">Automatic binding of environment variables</h3>
+
+<p>Environment variables with a <code class="highlighter-rouge">K2</code> prefix can also bind automatically to configuration values.</p>
+
+<p>For example, given that <code class="highlighter-rouge">export K2_DEPLOYMENT_CLUSTER=production-cluster</code>, the configuration:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deployment:
+  cluster: changeme
+  keypair:
+    -
+      name: key
+      publickeyFile:
+      privatekeyFile:
+      providerConfig:
+        username:
+        serviceAccount: "serviceaccount@project.iam.gserviceaccount.com"
+        serviceAccountKeyFile: "/Users/kraken/.ssh/keyfile.json"
+
+...
+</code></pre>
+</div>
+
+<p>will be expanded to:</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>deployment:
+  cluster: production-cluster
+  keypair:
+    -
+      name: key
+      publickeyFile:
+      privatekeyFile:
+      providerConfig:
+        username:
+        serviceAccount: "serviceaccount@project.iam.gserviceaccount.com"
+        serviceAccountKeyFile: "/Users/kraken/.ssh/keyfile.json"
+
+...
+</code></pre>
+</div>
+
+<h2 id="how-to-build-k2cli">How to build k2cli</h2>
+<p>k2cli is a Go project with vendored dependencies so building is a snap. Use the following commands to build k2cli.</p>
+
+<div class="highlighter-rouge"><pre class="highlight"><code>git clone https://github.com/&lt;your github account&gt;/k2cli.git
+cd k2cli
+go build
+</code></pre>
+</div>
+
+
+    <div class="tags">
+        
+    </div>
+</div>
+
+<hr class="shaded"/>
+
+<footer>
+            <div class="row">
+                <div class="col-lg-12 footer">
+               &copy;2017 Samsung SDS. All rights reserved. <br />
+ Site last generated: Feb 22, 2017 <br />
+<p><img src="images/samsunglogo.jpg" alt="Company logo"/></p>
+                </div>
+            </div>
+</footer>
+
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>
