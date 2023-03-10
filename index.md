@@ -5,7 +5,7 @@ summary:
 toc: false
 ---
 
-[The Joy of Astraction](https://www.cambridge.org/core/books/the-joy-of-abstraction/00D9AFD3046A406CB85D1AFF5450E657)
+[The Joy of Abstraction](https://www.cambridge.org/core/books/the-joy-of-abstraction/00D9AFD3046A406CB85D1AFF5450E657) -- [\(book club\)](https://topos.site/joa-bookclub/)
 
 [Category Theory for the Working Mathematician](https://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038)
 
