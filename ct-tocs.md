@@ -36,30 +36,30 @@
 
 3.2 [Kleisli category](https://www.youtube.com/watch?v=i9CU4CuHADQ)
 
-4.1 terminal and initial objects
+4.1 [Terminal and initial objects](https://www.youtube.com/watch?v=zer1aFgj4aU)
 
-4.2 Products
+4.2 [Products](https://www.youtube.com/watch?v=Bsdl_NKbNnU)
 
-5.1 Coproducts, sum types
+5.1 [Coproducts, sum types](https://www.youtube.com/watch?v=LkIRsNj9T-8)
 
-5.2 Algebraic data types
+5.2 [Algebraic data types](https://www.youtube.com/watch?v=w1WMykh7AxA)
 
-6.1 Functors
+6.1 [Functors](https://www.youtube.com/watch?v=FyoQjkwsy7o)
 
-6.2 Functors in programming
+6.2 [Functors in programming](https://www.youtube.com/watch?v=EO86S2EZssc)
 
-7.1 Functoriality, Bifunctors
+7.1 [Functoriality, bifunctors](https://www.youtube.com/watch?v=pUQ0mmbIdxs)
 
-7.2 Monoidal categories, Functoriality of ADTs. Profunctors
+7.2 [Monoidal categories, Functoriality of ADTs, Profunctors](https://www.youtube.com/watch?v=wtIKd8AhJOc)
 
-8.1 Function objects exponentials
+8.1 [Function objects exponentials](https://www.youtube.com/watch?v=REqRzMI26Nw)
 
-8.2 Type algebra, Curry-Howard-Lambek isomorphism
+8.2 [Type algebra, Curry-Howard-Lambek isomorphism](https://www.youtube.com/watch?v=iXZR1v3YN-8)
 
-9.1 Natural transformations
+9.1 [Natural transformations](https://www.youtube.com/watch?v=2LJC-XD5Ffo)
 
-9.2 Bicategories
+9.2 [Bicategories](https://www.youtube.com/watch?v=wrpxBXXgLCI)
 
-10.1 Monads
+10.1 [Monads](https://www.youtube.com/watch?v=gHiyzctYqZ0)
 
-10.2 Monoid in the category of endofunctors
+10.2 [Monoid in the category of endofunctors](https://www.youtube.com/watch?v=GmgoPd7VQ9Q)
