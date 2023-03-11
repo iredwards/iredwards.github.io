@@ -24,17 +24,17 @@
 
 # CT for Programmers lectures
 
-1.1 Motivation and Philosophy
+1.1 [Motivation and Philosophy](https://www.youtube.com/watch?v=I8LbkfSSR58)
 
-1.2 What is a category
+1.2 [What is a category](https://www.youtube.com/watch?v=p54Hd7AmVFU)
 
-2.1 Functions, epimorphisms
+2.1 [Functions, epimorphisms](https://www.youtube.com/watch?v=O2lZkr-aAqk)
 
-2.2 Monomorphisms, simple types
+2.2 [Monomorphisms, simple types](https://www.youtube.com/watch?v=NcT7CGPICzo)
 
-3.1 Examples of categories, orders, monoids
+3.1 [Examples of categories, orders, monoids](https://www.youtube.com/watch?v=aZjhqkD6k6w)
 
-3.2 Kleisli category
+3.2 [Kleisli category](https://www.youtube.com/watch?v=i9CU4CuHADQ)
 
 4.1 terminal and initial objects
 
