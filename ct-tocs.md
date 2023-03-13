@@ -1,4 +1,4 @@
-# JoA Part two chapters
+# JoA Part Two chapters
 
 14 Isomorphisms
 
@@ -23,6 +23,8 @@
 24 Higher dimensions
 
 # CT for Programmers lectures
+
+The ToC for his book is [here](https://bartoszmilewski.com/2014/10/28/category-theory-for-programmers-the-preface/).
 
 1.1 [Motivation and Philosophy](https://www.youtube.com/watch?v=I8LbkfSSR58)
 
