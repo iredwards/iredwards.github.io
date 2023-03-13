@@ -65,3 +65,19 @@ The ToC for his book is [here](https://bartoszmilewski.com/2014/10/28/category-t
 10.1 [Monads](https://www.youtube.com/watch?v=gHiyzctYqZ0)
 
 10.2 [Monoid in the category of endofunctors](https://www.youtube.com/watch?v=GmgoPd7VQ9Q)
+
+# Categories for the Idle Mathematician
+
+[Introduction](https://www.youtube.com/watch?v=JOp7mH72Jlg&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=1)
+
+[Functors](https://www.youtube.com/watch?v=6jrQjoM8b9s&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=2)
+
+[Natural transformations](https://www.youtube.com/watch?v=YLZuamSNLvc&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=3)
+
+[Adjoint functors](https://www.youtube.com/watch?v=jWtPimYNA9Q&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=4)
+
+[Limits and colimits](https://www.youtube.com/watch?v=xRRTvJ5N_hI&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=5)
+
+[Monoidal categories](https://www.youtube.com/watch?v=cU8E5O8oV_g&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=6)
+
+[Yoneda's lemma](https://www.youtube.com/watch?v=PpxPyOm3Xck&list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL&index=7)
