@@ -15,7 +15,7 @@ I've long been fascinated by *Tables of Contents* and *Indexes*. They are useful
 
 [Category Theory for Programmers](https://www.youtube.com/watch?v=I8LbkfSSR58&list=PLbgaMIhjbmEnaH_LTkxLI7FMa2HsnawM_) by Bartosz Milewski. This excellent lecture series and [book](https://github.com/hmemcpy/milewski-ctfp-pdf) approach CT from the perspective of functional programming. You don't need to be a programmer to follow, but if you're not carefull you might pick up a bit of Haskell along the way. 
 
-[Categories for the Working Mathematician](https://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038) by Saunders Mac Lane. Just kidding! I'm not in the target audience of this [OG textbook](https://aperiodical.com/wp-content/uploads/2022/05/FTBdMZ5XsAAeq8C.png) by one of the discovers of CT. But every other book refers to it and it pervades spacetime like the ether.
+[Categories for the Working Mathematician](https://www.amazon.com/Categories-Working-Mathematician-Graduate-Mathematics/dp/0387984038) by Saunders Mac Lane. Just kidding! I'm not in the target audience of this [OG textbook](https://aperiodical.com/wp-content/uploads/2022/05/FTBdMZ5XsAAeq8C.png) by one of the discovers of CT. But every other book refers to it and it pervades spacetime like the ether. Part of his ToC is [here](maclane).
 
 [Categories for the Idle Mathematician](https://www.youtube.com/playlist?list=PL8yHsr3EFj51F9XZ_Ka4bLnQoxTdMx0AL) by Richard Borcherds presupposes a background in math, but I caught some glimpses of the road ahead from his lessons.
 
