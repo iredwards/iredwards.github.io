@@ -10,7 +10,7 @@
 
 18 Products and coproducts
 
-19 Pullbacks and pushouts
+19 [Pullbacks and pushouts](pullbacks)
 
 20 Functors
 
