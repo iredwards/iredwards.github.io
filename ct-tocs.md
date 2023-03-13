@@ -6,7 +6,7 @@
 
 16 Universal properties
 
-17 Duality
+17 [Duality](duality)
 
 18 Products and coproducts
 
